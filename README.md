@@ -3,4 +3,4 @@ Please consult the [postBuild](postBuild) script and the [postBuild.d](postBuild
 
 |Classic|Jupyter-Lab|
 |--|--|
-|[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rcmlz/jupyter-rakudo-star/main)|[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rcmlz/jupyter-rakudo-star/main?urlpath=lab)|
+|[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rcmlz/jupyter-rakudo-star/chatbook)|[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rcmlz/jupyter-rakudo-star/chatbook?urlpath=lab)|

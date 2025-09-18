@@ -28,4 +28,5 @@ echo "patched kernel.json"
 cat $HOME/.local/share/jupyter/kernels/raku/kernel.json
 
 # more libraries that might be useful
-zef install --/test SVG::Plot Text::Plot
+zef update
+cat $HOME/postBuild.d/packages.txt | raku -e 'for $*IN.lines.grep(/^^\w/) { say shell "zef install --/test \"$_\"" }'

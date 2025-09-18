@@ -16,8 +16,8 @@ eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"
 rakubrew download
 
 # show current version
-echo "raku version:"
-raku -e 'say "Now running {$*RAKU.compiler.version}!"'
+cat $HOME/postBuild.d/raku.asciiart
+raku --version
 
-echo "zef version:"
+cat $HOME/postBuild.d/zef.asciiart
 zef --version

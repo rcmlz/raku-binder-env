@@ -8,3 +8,5 @@ lib/.precomp
 .idea
 
 .DS_Store
+
+.ipynb_checkpoints/

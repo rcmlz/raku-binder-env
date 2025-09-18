@@ -3,7 +3,7 @@ vim
 
 # use the versions that come with the package manager
 rakudo
-zef
+raku-zef
 
 # for latest rakudo-star bundle
 # instruction taken from see https://rakudo.org/star/source

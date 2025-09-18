@@ -2,8 +2,8 @@
 
 curl https://rakubrew.org/install-on-perl.sh | sh
 
-#echo 'eval "$(/home/jovyan/.rakubrew/bin/rakubrew init Bash)"' >> ~/start
-#eval "$(/home/jovyan/.rakubrew/bin/rakubrew init Bash)"
+#echo 'eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"' >> ~/start
+#eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"
 
 echo 'export PATH=$HOME/.rakubrew/bin:$PATH' >> ~/start
 echo 'export PATH=$(rakubrew home)/shims:$PATH' >> ~/start

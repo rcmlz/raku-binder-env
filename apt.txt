@@ -1,3 +1,6 @@
+# for debugging
+vim
+
 # for latest rakudo-star bundle
 # instruction taken from see https://rakudo.org/star/source
 build-essential

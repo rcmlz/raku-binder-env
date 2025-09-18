@@ -12,7 +12,7 @@ export PATH=$HOME/.local/bin:$PATH
 
 git clone https://github.com/ugexe/zef.git
 cd zef
-raku -I. .local/bin/zef install .
+raku -I. bin/zef install .
 
 #curl https://rakubrew.org/install-on-perl.sh | sh
 

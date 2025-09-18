@@ -21,7 +21,7 @@ echo "Patching kernel.json - removing the .raku"
 # cp $HOME/.local/share/jupyter/kernels/raku/kernel.json $HOME/postBuild.d/
 # vi $HOME/postBuild.d/kernel.json
 # diff --unified $HOME/.local/share/jupyter/kernels/raku/kernel.json kernel.json > kernel.json.patch
-# echo "\n" >> $HOME/postBuild.d/kernel.json.patch
+# echo -e "\n" >> $HOME/postBuild.d/kernel.json.patch
 patch -d $HOME/.local/share/jupyter/kernels/raku/ < $HOME/postBuild.d/kernel.json.patch
 
 echo "patched kernel.json"

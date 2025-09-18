@@ -14,7 +14,5 @@ zef install --/test --deps-only "$PACKAGE_NAME"
 echo "Installing $PACKAGE_NAME kernel"
 zef install --/test "$PACKAGE_NAME"
 
-rakubrew mode shim
-
 echo "Generating $PACKAGE_NAME config"
-jupyter-chatbook.raku --generate-config
+jupyter-chatbook --generate-config

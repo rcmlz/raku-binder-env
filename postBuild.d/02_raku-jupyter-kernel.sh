@@ -19,4 +19,10 @@ jupyter-chatbook --generate-config
 
 echo "Patching kernel.json - removing the .raku"
 # diff --unified $HOME/.local/share/jupyter/kernels/raku/kernel.json kernel.json > kernel.json.patch
-patch -d /home/jovyan/.local/share/jupyter/kernels/raku/  < kernel.json.patch
+patch -d $HOME/.local/share/jupyter/kernels/raku/ < $HOME/postBuild.d/kernel.json.patch
+
+echo "kernel.json.orig"
+cat $HOME/.local/share/jupyter/kernels/raku/kernel.json.orig
+
+echo "patched kernel.json"
+cat $HOME/.local/share/jupyter/kernels/raku/kernel.json

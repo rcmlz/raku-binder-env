@@ -1,6 +1,10 @@
 # for debugging
 vim
 
+# Readline:ver<0.1.8>:auth<zef:clarkema>
+# https://packages.ubuntu.com/search?keywords=libreadline&searchon=names&suite=jammy&section=all
+libreadline8
+
 # for latest rakudo-star bundle
 # instruction taken from see https://rakudo.org/star/source
 build-essential

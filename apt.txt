@@ -1,10 +1,6 @@
 # for debugging
 vim
 
-# use the versions that come with the package manager
-rakudo
-libreadline-dev
-
 # for latest rakudo-star bundle
 # instruction taken from see https://rakudo.org/star/source
 build-essential

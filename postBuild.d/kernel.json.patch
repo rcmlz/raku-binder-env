@@ -1,11 +1,11 @@
---- /home/jovyan/.local/share/jupyter/kernels/raku/kernel.json  2025-09-18 10:29:40.875000000 +0000
-+++ kernel.json 2025-09-18 10:29:06.028000000 +0000
+--- /home/jovyan/.local/share/jupyter/kernels/raku/kernel.json  2025-09-18 11:18:31.000000000 +0000
++++ /home/jovyan/postBuild.d/kernel.json        2025-09-18 11:19:20.148000000 +0000
 @@ -2,7 +2,7 @@
-     "display_name": "RakuChatbook",
+     "display_name": "Raku",
      "language": "raku",
      "argv": [
--        "jupyter-chatbook.raku",
-+        "jupyter-chatbook",
+-        "jupyter-kernel.raku",
++        "jupyter-kernel",
          "{connection_file}"
      ]
  }

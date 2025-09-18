@@ -17,7 +17,7 @@ rakubrew download
 
 # show current version
 echo "raku version:"
-zraku -e 'say "Now running {$*RAKU.compiler.version}!"'
+raku -e 'say "Now running {$*RAKU.compiler.version}!"'
 
 echo "zef version:"
 zef --version

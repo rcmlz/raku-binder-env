@@ -16,3 +16,6 @@ zef install --/test "$PACKAGE_NAME"
 
 echo "Generating $PACKAGE_NAME config"
 jupyter-chatbook --generate-config
+
+echo "Patching kernel.json - removing the .raku"
+patch -p1 < kernel.json.patch

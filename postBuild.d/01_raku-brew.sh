@@ -6,6 +6,8 @@ source ~/start
 
 
 mkdir -p .local/bin
+mkdir -p /usr/lib/perl6/site/short
+chmod 777 /usr/lib/perl6/site/short
 
 echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/start
 export PATH=$HOME/.local/bin:$PATH
@@ -44,4 +46,7 @@ raku -I. bin/zef install .
 #rakubrew download
 
 # show current version
-#raku -e 'say "Now running {$*RAKU.compiler.version}!"'
+raku -e 'say "Now running {$*RAKU.compiler.version}!"'
+
+echo "zef version:"
+zef --version

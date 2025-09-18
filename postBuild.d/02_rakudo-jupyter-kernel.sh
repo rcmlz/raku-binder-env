@@ -4,7 +4,7 @@ source ~/start
 export ZEF_TEST_DEGREE=4
 export ZEF_FETCH_DEGREE=4
 
-export $PACKAGE_NAME='Jupyter::Chatbook:auth<zef:antononcube>'
+export PACKAGE_NAME='Jupyter::Chatbook:auth<zef:antononcube>'
 
 echo "instruction taken from https://github.com/antononcube/Raku-Jupyter-Chatbook"
 

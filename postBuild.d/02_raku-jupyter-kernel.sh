@@ -26,3 +26,6 @@ patch -d $HOME/.local/share/jupyter/kernels/raku/ < $HOME/postBuild.d/kernel.jso
 
 echo "patched kernel.json"
 cat $HOME/.local/share/jupyter/kernels/raku/kernel.json
+
+# more libraries that might be useful
+zef install --/test SVG::Plot Text::Plot

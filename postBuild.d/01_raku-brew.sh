@@ -1,7 +1,18 @@
 #!/bin/bash
+source ~/start
 
-# currently we use an older version of rakudo and zef from the package manager
+# currently we use an older version of rakudo from the package manager
 # defined in apt.txt
+
+
+mkdir -p .local/bin
+
+echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/start
+export PATH=$HOME/.local/bin:$PATH
+
+git clone https://github.com/ugexe/zef.git
+cd zef
+raku -I. .local/bin/zef install .
 
 #curl https://rakubrew.org/install-on-perl.sh | sh
 

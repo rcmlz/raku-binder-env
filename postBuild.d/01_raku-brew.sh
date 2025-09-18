@@ -2,15 +2,17 @@
 
 curl https://rakubrew.org/install-on-perl.sh | sh
 
-echo 'eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"' >> ~/start
-eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"
-
+# see https://raku.org/nav/1/install
 echo 'export PATH=$HOME/.rakubrew/bin:$PATH' >> ~/start
 echo 'export PATH=$(rakubrew home)/shims:$PATH' >> ~/start
 echo 'rakubrew mode shim' >> ~/start
 
 export PATH=$HOME/.rakubrew/bin:$PATH
 export PATH=$(rakubrew home)/shims:$PATH
+rakubrew mode shim
+
+echo 'eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"' >> ~/start
+eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"
 
 # list available versions
 rakubrew available

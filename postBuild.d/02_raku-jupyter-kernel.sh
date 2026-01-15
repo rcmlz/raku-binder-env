@@ -7,7 +7,7 @@ echo $PATH
 export ZEF_TEST_DEGREE=`raku -e "say $*Kernel.cpu-cores"`
 export ZEF_FETCH_DEGREE=$ZEF_TEST_DEGREE
 
-export PACKAGE_NAME='Jupyter::Chatbook:ver<0.3.6>:auth<zef:antononcube>:api<1>'
+export PACKAGE_NAME='Jupyter::Chatbook:auth<zef:antononcube>'
 
 echo "instruction taken from https://github.com/antononcube/Raku-Jupyter-Chatbook"
 

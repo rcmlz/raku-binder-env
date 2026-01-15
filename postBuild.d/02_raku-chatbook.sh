@@ -19,7 +19,3 @@ zef install --/test "$PACKAGE_NAME"
 
 echo "Generating $PACKAGE_NAME config"
 jupyter-chatbook-raku --generate-config --location=$HOME/.local/share/jupyter/kernels/chatbook-raku
-
-echo "more libraries from https://raku.land/ that might be useful"
-zef update
-cat $HOME/postBuild.d/packages.txt | raku -e 'for $*IN.lines.grep(/^^\w/) { say shell "zef install --/test \"$_\"" }'

@@ -18,7 +18,7 @@ echo "Installing $PACKAGE_NAME kernel"
 zef install --/test "$PACKAGE_NAME"
 
 echo "Generating $PACKAGE_NAME config"
-jupyter-chatbook-raku --generate-config
+jupyter-chatbook-raku --generate-config --location=$HOME/.local/share/jupyter/kernels/chatbook-raku
 
 echo "more libraries from https://raku.land/ that might be useful"
 zef update

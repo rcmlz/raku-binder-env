@@ -1,6 +1,9 @@
 #!/bin/bash
 source ~/start
 
+echo 'echo $PATH'
+echo $PATH
+
 export ZEF_TEST_DEGREE=`raku -e "say $*Kernel.cpu-cores"`
 export ZEF_FETCH_DEGREE=$ZEF_TEST_DEGREE
 

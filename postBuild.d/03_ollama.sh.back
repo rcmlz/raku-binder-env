@@ -4,7 +4,7 @@ source ~/start
 echo "instruction taken from https://docs.ollama.com/linux"
 
 mkdir -p ollama
-curl -fsSL https://ollama.com/download/ollama-linux-amd64.tar.zst  | tar --zstd -x -C ollama -
+curl -fsSL https://ollama.com/download/ollama-linux-amd64.tar.zst  | tar --zstd -x -C ollama
 
 #running as local user:    
 echo '$HOME/ollama/bin/ollama serve &' >> ~/start

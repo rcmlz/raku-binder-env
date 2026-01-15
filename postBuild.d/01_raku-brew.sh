@@ -1,9 +1,11 @@
 #!/bin/bash
 source ~/start
 
+RAKUVERSION='moar-2025.12'
+
 curl https://rakubrew.org/install-on-perl.sh | sh
 
-# see https://raku.org/nav/1/install
+# see https://rakubrew.org/?platform=linux
 # according to the above link, the following lines should be added to ~/.bashrc or ~/.zshrc
 echo 'eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"' >> ~/start
 echo 'eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"' >> ~/.bashrc
@@ -12,8 +14,8 @@ eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"
 # list available versions
 # rakubrew available
 
-# download and install the latest Rakudo on MoarVM version
-rakubrew download
+# download and install pre-defined Rakudo on MoarVM version
+rakubrew download $RAKUVERSION
 
 # show current version
 cat $HOME/postBuild.d/raku.asciiart

@@ -1,10 +1,13 @@
 #!/bin/bash
 source ~/start
 
-export ZEF_TEST_DEGREE=4
-export ZEF_FETCH_DEGREE=4
+echo 'echo $PATH'
+echo $PATH
 
-export PACKAGE_NAME='Jupyter::Chatbook:auth<zef:antononcube>'
+export ZEF_TEST_DEGREE=`raku -e "say $*Kernel.cpu-cores"`
+export ZEF_FETCH_DEGREE=$ZEF_TEST_DEGREE
+
+export PACKAGE_NAME='Jupyter::Chatbook:ver<0.3.6>:auth<zef:antononcube>:api<1>'
 
 echo "instruction taken from https://github.com/antononcube/Raku-Jupyter-Chatbook"
 
@@ -15,18 +18,8 @@ echo "Installing $PACKAGE_NAME kernel"
 zef install --/test "$PACKAGE_NAME"
 
 echo "Generating $PACKAGE_NAME config"
-jupyter-chatbook --generate-config
+jupyter-chatbook-raku --generate-config
 
-echo "Patching kernel.json - removing the .raku"
-# cp $HOME/.local/share/jupyter/kernels/raku/kernel.json $HOME/postBuild.d/
-# vi $HOME/postBuild.d/kernel.json
-# diff --unified $HOME/.local/share/jupyter/kernels/raku/kernel.json kernel.json > kernel.json.patch
-# echo -e "\n" >> $HOME/postBuild.d/kernel.json.patch
-patch -d $HOME/.local/share/jupyter/kernels/raku/ < $HOME/postBuild.d/kernel.json.patch
-
-echo "patched kernel.json"
-cat $HOME/.local/share/jupyter/kernels/raku/kernel.json
-
-# more libraries that might be useful
+echo "more libraries from https://raku.land/ that might be useful"
 zef update
 cat $HOME/postBuild.d/packages.txt | raku -e 'for $*IN.lines.grep(/^^\w/) { say shell "zef install --/test \"$_\"" }'

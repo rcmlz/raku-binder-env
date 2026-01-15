@@ -15,7 +15,7 @@ echo "Installing $PACKAGE_NAME kernel"
 zef install --/test "$PACKAGE_NAME"
 
 echo "Generating $PACKAGE_NAME config"
-/home/jovyan/.rakubrew/versions/moar-2025.12/share/perl6/site/bin/jupyter-chatbook --generate-config
+jupyter-chatbook --generate-config
 
 #echo "Patching kernel.json - removing the .raku"
 # cp $HOME/.local/share/jupyter/kernels/raku/kernel.json $HOME/postBuild.d/

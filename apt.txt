@@ -14,5 +14,5 @@
 
 # for raku kernel
 # instruction taken from https://github.com/bduggan/raku-jupyter-kernel
-#libzmq5
+libzmq5
 #libzmq3-dev

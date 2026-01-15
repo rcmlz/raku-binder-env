@@ -1,10 +1,11 @@
 let
   # Pinning nixpkgs to specific release
   # To get sha256 use "nix-prefetch-git <url> --rev <commit>"
-  commitRev="5574b6a152b1b3ae5f93ba37c4ffd1981f62bf5a";
+  # nix-prefetch-git https://github.com/NixOS/nixpkgs.git --rev 25.11
+  commitRev="871b9fd269ff6246794583ce4ee1031e1da71895";
   nixpkgs = builtins.fetchTarball {
     url = "https://github.com/NixOS/nixpkgs/archive/${commitRev}.tar.gz";
-    sha256 = "1pqdddp4aiz726c7qs1dwyfzixi14shp0mbzi1jhapl9hrajfsjg";
+    hash = "sha256-M101xMtWdF1eSD0xhiR8nG8CXRlHmv6V+VoY65Smwf4=";
   };
   pkgs = import nixpkgs { config = { allowUnfree = true; }; };
   pythonPackages = pkgs.python36Packages;

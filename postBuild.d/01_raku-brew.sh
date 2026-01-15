@@ -25,4 +25,5 @@ cat $HOME/postBuild.d/zef.asciiart
 zef --version
 
 # add rakubrew bin to PATH
-echo 'export PATH=/home/jovyan/.rakubrew/bin:/home/jovyan/.rakubrew/versions/' + $RAKUVERSION + '/share/perl6/site/bin:$PATH' >> ~/start
+MYRAKUPATH='export PATH=/home/jovyan/.rakubrew/bin:/home/jovyan/.rakubrew/versions/' + $RAKUVERSION + '/share/perl6/site/bin:$PATH'
+echo $MYRAKUPATH >> ~/start

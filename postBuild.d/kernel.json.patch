@@ -1,0 +1,12 @@
+--- /home/jovyan/.local/share/jupyter/kernels/raku/kernel.json	2026-01-15 14:19:49.031965680 +0000
++++ kernel.json	2026-01-15 14:20:32.039754801 +0000
+@@ -2,7 +2,7 @@
+     "display_name": "Raku",
+     "language": "raku",
+     "argv": [
+-        "jupyter-kernel.raku",
++        "jupyter-kernel",
+         "{connection_file}"
+     ]
+ }
+\n

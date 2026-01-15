@@ -15,7 +15,7 @@ echo "Installing $PACKAGE_NAME kernel"
 zef install --/test "$PACKAGE_NAME"
 
 echo "Generating $PACKAGE_NAME config"
-jupyter-kernel.raku --generate-config --location=$HOME/.local/share/jupyter/kernels/raku
+jupyter-kernel --generate-config --location=$HOME/.local/share/jupyter/kernels/raku
 
 echo "Patching kernel.json - removing the .raku"
 # cp $HOME/.local/share/jupyter/kernels/raku/kernel.json $HOME/postBuild.d/

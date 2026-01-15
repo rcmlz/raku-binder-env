@@ -5,7 +5,8 @@ nano
 # raku - not yet available - we use rakubrew meanwhile
 #raku
 #raku-zef
+libreadline-dev
 
 # for raku kernel
 # instruction taken from https://github.com/bduggan/raku-jupyter-kernel
-libzmq5
+libzmq5-dev

@@ -5,7 +5,7 @@ RAKUVERSION='moar-2025.12'
 
 curl https://rakubrew.org/install-on-perl.sh | sh
 
-# see https://raku.org/nav/1/install
+# see https://rakubrew.org/?platform=linux
 # according to the above link, the following lines should be added to ~/.bashrc or ~/.zshrc
 echo 'eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"' >> ~/start
 echo 'eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"' >> ~/.bashrc
@@ -23,7 +23,3 @@ raku --version
 
 cat $HOME/postBuild.d/zef.asciiart
 zef --version
-
-# add rakubrew bin to PATH
-MYRAKUPATH="$HOME/.rakubrew/bin:$HOME/.rakubrew/versions/$RAKUVERSION/share/perl6/site/bin"
-echo "export PATH=$MYRAKUPATH:\$PATH" >> ~/start

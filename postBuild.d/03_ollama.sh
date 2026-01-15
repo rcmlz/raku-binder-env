@@ -4,10 +4,10 @@ source ~/start
 echo "instruction taken from https://docs.ollama.com/linux"
 
 mkdir -p ollama
-curl -fsSL https://ollama.com/download/ollama-linux-amd64.tar.zst  | tar -C ollama --zstd -xvf -
+curl -fsSL https://ollama.com/download/ollama-linux-amd64.tar.zst  | tar --zstd -x -C ollama -
 
 #running as local user:    
-echo '/home/jovyan/ollama/bin/ollama serve &' >> ~/start
+echo '$HOME/ollama/bin/ollama serve &' >> ~/start
 ollama/bin/ollama serve &
 
 # pull small model

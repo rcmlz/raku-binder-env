@@ -1,9 +1,14 @@
 # for debugging
 vim
+nano
+
+# raku
+raku
+raku-zef
 
 # for building
-#build-essential
-#libssl-dev
+build-essential
+libssl-dev
 git
 git-lfs
 

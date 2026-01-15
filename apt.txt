@@ -1,12 +1,12 @@
 # for debugging
 vim
 
-# for latest rakudo-star bundle
-# instruction taken from see https://rakudo.org/star/source
-build-essential
-libssl-dev
+# for building
+#build-essential
+#libssl-dev
 git
+git-lfs
 
 # for raku kernel
-# instruction taken from https://github.com/bduggan/p6-jupyter-kernel
-libzmq5-dev
+# instruction taken from https://github.com/bduggan/raku-jupyter-kernel
+libzmq-dev

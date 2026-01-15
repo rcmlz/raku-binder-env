@@ -4,7 +4,7 @@
 
 ---
 
-Use a repo like this one as an environment-repo via [nbgitpuller](https://nbgitpuller.readthedocs.io/en/latest/link.html) to quickly launch your actuall notebook-repo.
+Use a repo like this one as a Binder environment-repo via [nbgitpuller](https://nbgitpuller.readthedocs.io/en/latest/link.html) to quickly launch your actuall notebook-repo(s).
 
 - [Jupyter::Chatbook Examples](https://mybinder.org/v2/gh/rcmlz/raku-binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fantononcube%252FRaku-Jupyter-Chatbook%26urlpath%3Dlab%252Ftree%252FRaku-Jupyter-Chatbook%252Feg%252F%26branch%3Dmaster)
 

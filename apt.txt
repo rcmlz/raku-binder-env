@@ -1,5 +1,5 @@
 # for debugging
-vi
+vim
 nano
 
 # raku - not yet available - we use rakubrew meanwhile

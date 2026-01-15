@@ -1,8 +1,6 @@
 #!/bin/bash
 source ~/start
 
-eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"
-
 export ZEF_TEST_DEGREE=4
 export ZEF_FETCH_DEGREE=4
 
@@ -17,7 +15,7 @@ echo "Installing $PACKAGE_NAME kernel"
 zef install --/test "$PACKAGE_NAME"
 
 echo "Generating $PACKAGE_NAME config"
-jupyter-chatbook --generate-config
+/home/jovyan/.rakubrew/versions/moar-2025.12/share/perl6/site/bin/jupyter-chatbook --generate-config
 
 #echo "Patching kernel.json - removing the .raku"
 # cp $HOME/.local/share/jupyter/kernels/raku/kernel.json $HOME/postBuild.d/

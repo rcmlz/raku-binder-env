@@ -13,7 +13,7 @@ eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"
 # rakubrew available
 
 # download and install the latest Rakudo on MoarVM version
-rakubrew download
+rakubrew download moar-2025.12
 
 # show current version
 cat $HOME/postBuild.d/raku.asciiart

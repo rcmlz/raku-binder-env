@@ -1,18 +1,11 @@
 # for debugging
-#vim
-#nano
+vi
+nano
 
 # raku - not yet available - we use rakubrew meanwhile
 #raku
 #raku-zef
 
-# for building
-#build-essential
-#libssl-dev
-#git
-#git-lfs
-
 # for raku kernel
 # instruction taken from https://github.com/bduggan/raku-jupyter-kernel
 libzmq5
-#libzmq3-dev

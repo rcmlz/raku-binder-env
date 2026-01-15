@@ -1,6 +1,8 @@
 #!/bin/bash
 source ~/start
 
+eval "$($HOME/.rakubrew/bin/rakubrew init Bash)"
+
 export ZEF_TEST_DEGREE=4
 export ZEF_FETCH_DEGREE=4
 
@@ -28,5 +30,5 @@ jupyter-chatbook --generate-config
 #cat $HOME/.local/share/jupyter/kernels/raku/kernel.json
 
 # more libraries that might be useful
-zef install --/test SVG::Plot Text::Plot
+#zef install --/test SVG::Plot Text::Plot
 

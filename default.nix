@@ -5,7 +5,7 @@ let
   commitRev="871b9fd269ff6246794583ce4ee1031e1da71895";
   nixpkgs = builtins.fetchTarball {
     url = "https://github.com/NixOS/nixpkgs/archive/${commitRev}.tar.gz";
-    hash = "sha256-M101xMtWdF1eSD0xhiR8nG8CXRlHmv6V+VoY65Smwf4=";
+    sha256 = "1zn1lsafn62sz6azx6j735fh4vwwghj8cc9x91g5sx2nrg23ap9k";
   };
   pkgs = import nixpkgs { config = { allowUnfree = true; }; };
   pythonPackages = pkgs.python36Packages;

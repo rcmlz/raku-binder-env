@@ -2,16 +2,17 @@
 vim
 nano
 
-# raku
-raku
-raku-zef
+# raku - not yet available - we use rakubrew meanwhile
+#raku
+#raku-zef
 
 # for building
-build-essential
-libssl-dev
-git
-git-lfs
+#build-essential
+#libssl-dev
+#git
+#git-lfs
 
 # for raku kernel
 # instruction taken from https://github.com/bduggan/raku-jupyter-kernel
-libzmq-dev
+libzmq5
+libzmq3-dev

@@ -1,9 +1,6 @@
 #!/bin/bash
 source ~/start
 
-echo 'echo $PATH'
-echo $PATH
-
 export ZEF_TEST_DEGREE=`raku -e "say $*Kernel.cpu-cores"`
 export ZEF_FETCH_DEGREE=$ZEF_TEST_DEGREE
 
@@ -18,4 +15,9 @@ echo "Installing $PACKAGE_NAME kernel"
 zef install --/test "$PACKAGE_NAME"
 
 echo "Generating $PACKAGE_NAME config"
-jupyter-chatbook-raku --generate-config --location=$HOME/.local/share/jupyter/kernels/chatbook-raku
+jupyter-chatbook-raku --generate-config --location=$HOME/.local/share/jupyter/kernels/raku-chatbook
+
+#echo 'echo $PATH'
+#echo $PATH
+#echo 'which raku'
+#which raku
